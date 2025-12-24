@@ -1,0 +1,21 @@
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE & Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari */
+}
+
+@media(max-width: 1023px){
+  .card-expanded:last-child{
+   grid-column: span 2;
+   max-width: 400px;
+  }
+}
+@media(max-width: 639px){
+  .card-expanded:last-child{
+   grid-column: span 1;
+   max-width: 100%;
+  }
+}
