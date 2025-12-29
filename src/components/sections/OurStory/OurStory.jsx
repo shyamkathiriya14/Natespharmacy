@@ -5,7 +5,7 @@ import Heart_icon from "../../../assets/images/OurStory/heart-icon.svg";
 const OurStory = () => {
   return (
     <>
-      <section className='py-[80px] xl:py-[110px] w-full max-w-[1350px] mx-auto'>
+      <section id="our-story" className='py-[80px] xl:py-[110px] w-full max-w-[1350px] mx-auto'>
         <h1 className='text-[#154D71] text-center text-[32px] md:text-[38px] lg:text-[44px] xl:text-[48px] font-bold leading-[100%] mb-[36px] xl:mb-[55px]'>Our Story</h1>
         <div className='grid grid-cols-[1fr] lg:grid-cols-[auto_1fr] items-center gap-[24px] sm:gap-[36px] xl:gap-[50px]'>
           <div className='w-full lg:max-w-[550px] xl:max-w-[671px] h-full'>
