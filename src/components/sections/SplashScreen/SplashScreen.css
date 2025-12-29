@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Splash Screen */
+.splash {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(
+    100.86deg,
+    #1C6EA4 14.45%,
+    #0B2A3E 88.24%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: splashFade 2.4s ease forwards;
+  z-index: 9999;
+}
+
+/* Logo */
+.logo {
+  width: 300px;
+  animation: logoScale 2.4s ease forwards;
+}
+
+/* Animations */
+@keyframes logoScale {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(18);
+    opacity: 0;
+  }
+}
+
+@keyframes splashFade {
+  0% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
