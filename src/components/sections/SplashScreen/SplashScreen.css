@@ -26,6 +26,13 @@
   animation: logoScale 2.4s ease forwards;
 }
 
+@media(max-width:767px){
+  .logo {
+  width: 230px;
+  animation: logoScale 2.4s ease forwards;
+}
+}
+
 /* Animations */
 @keyframes logoScale {
   0% {
