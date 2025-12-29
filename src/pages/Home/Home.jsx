@@ -11,16 +11,23 @@ import Newslatter from '../../components/sections/Newslatter/Newslatter'
 const Home = () => {
   return (
     <>
-  <div className='w-full max-w-[1440px] mx-auto px-[16px] sm:px-[20px]'>
-      <Header/>
-      <Hero/>
-      <HeroButtons/>
-      <OurStory/>
-  </div>
-      <WhyChooseUs/>
-      <Testimonial/>
-      <Newslatter/>
-    <Footer/>
+ {/* Header always visible */}
+      <Header />
+
+      {/* Container sections */}
+      <div className="w-full max-w-[1440px] mx-auto px-[16px] sm:px-[20px]">
+        <Hero />
+        <HeroButtons />
+        <OurStory />
+      </div>
+
+      {/* Full-width sections */}
+      <WhyChooseUs />
+      <Testimonial />
+      <Newslatter />
+
+      {/* Footer */}
+      <Footer />
     </>
   )
 }

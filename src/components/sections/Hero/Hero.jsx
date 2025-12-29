@@ -7,7 +7,7 @@ import Delivery_Truck_icon from "../../../assets/images/Hero/delivery-truck.svg"
 const Hero = () => {
   return (
     <>
-      <div className='bg-[linear-gradient(0deg,#1C6EA4,#96cef4,#fff)] sm:bg-none sm:bg-[#1C6EA4] h-auto sm:h-[500px] lg:h-[580px] xl:h-[631px] rounded-[0px_0px_46px_46px] sm:rounded-[46px] relative overflow-hidden mb-[43px] mx-[-20px] sm:mx-[0px]'>
+      <div id="home" className='bg-[linear-gradient(0deg,#1C6EA4,#96cef4,#fff)] sm:bg-none sm:bg-[#1C6EA4] h-auto sm:h-[500px] lg:h-[580px] xl:h-[631px] rounded-[0px_0px_46px_46px] sm:rounded-[46px] relative overflow-hidden mb-[43px] mx-[-20px] sm:mx-[0px]'>
 
         <div className='flex items-center sm:items-end justify-between pt-[48px] sm:pt-0 px-[40px] h-full flex-col sm:flex-row relative z-[1] gap-[45px] sm:gap-0'>
           <div className='h-full flex flex-col justify-center'>

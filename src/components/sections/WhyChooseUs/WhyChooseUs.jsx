@@ -40,7 +40,7 @@ const WhyChooseUs = () => {
 ];
     return (
         <>
-            <section className='bg-[linear-gradient(114.74deg,#EBF8FF_0.35%,#9ADAFF_91.62%)] py-[80px] xl:py-[110px] px-[20px]'>
+            <section id="why-choose-us" className='bg-[linear-gradient(114.74deg,#EBF8FF_0.35%,#9ADAFF_91.62%)] py-[80px] xl:py-[110px] px-[20px]'>
                 <div className='mb-[60px] sm:mb-[80px] xl:mb-[110px]'>
                     <h1 className='text-[32px] md:text-[38px] lg:text-[44px] xl:text-[48px] font-bold text-[#154D71] text-center leading-[100%] mb-[32px] xl:mb-[60px]'>Why Choose Us</h1>
                     <p className='w-full max-w-[556px] mx-auto text-center text-[16px] lg:text-[18px] xl:text-[20px] text-[#154D71]'>At Nates Pharmacy, we combine personal care with modern convenience. From quick refills to free delivery, we’re here to make managing your health simple and stress-free.</p>

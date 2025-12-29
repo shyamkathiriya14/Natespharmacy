@@ -5,7 +5,7 @@ import Testimonial_icon from "../../../assets/images/Testimonials/testimonial.sv
 const Testimonial = () => {
   return (
     <>
-     <section className='py-[80px] xl:py-[150px] px-[20px]'>
+     <section id="reviews" className='py-[80px] xl:py-[150px] px-[20px]'>
       <h1 className='text-[32px] md:text-[38px] lg:text-[44px] xl:text-[48px] text-center mb-[60px] sm:mb-[66px] xl:mb-[76px] font-extrabold text-[#154D71]'>What Our Customers Say</h1>
       <div className='flex items-center flex-col md:flex-row justify-center gap-[20px] sm:gap-[26px] lg:gap-[32px] xl:gap-[55px]'>
         <div className='px-[30px] md:px-[42px] xl:px-[55px] py-[28px] md:py-[35px] rounded-[30px] shadow-[0px_6px_42.8px_0px_rgba(0,0,0,0.11)] w-full max-w-[550px]'>
