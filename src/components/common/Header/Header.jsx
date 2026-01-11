@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import Company_Logo from "../../../assets/images/Header/CompanyLogo.svg";
 
 const Header = () => {
@@ -9,14 +10,16 @@ const Header = () => {
   const [footerVisible, setFooterVisible] = useState(false);
 
   const isClickScrolling = useRef(false);
+  const navigate = useNavigate();
 
-  const sections = ["home", "our-story", "why-choose-us", "reviews"];
+  /* SCROLL SECTIONS (Reviews removed) */
+  const sections = ["home", "our-story", "why-choose-us"];
 
   /* ---------------- HEADER HIDE / SHOW ---------------- */
   useEffect(() => {
     const controlHeader = () => {
       if (footerVisible) {
-        setHidden(false); // Always show if footer is visible
+        setHidden(false);
         return;
       }
 
@@ -25,6 +28,7 @@ const Header = () => {
       } else {
         setHidden(false);
       }
+
       setLastScrollY(window.scrollY);
     };
 
@@ -55,7 +59,7 @@ const Header = () => {
       }
     };
 
-    onScroll(); // run on page load
+    onScroll();
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
@@ -90,6 +94,12 @@ const Header = () => {
     }, 600);
   };
 
+  /* ---------------- CAREERS PAGE NAVIGATION ---------------- */
+  const goToCareers = () => {
+    setOpen(false);
+    navigate("/careers");
+  };
+
   const linkClass = (id) =>
     `relative cursor-pointer transition-colors duration-300 ${
       activeSection === id ? "text-[#0B2A3E]" : "text-[#154D71]"
@@ -101,14 +111,11 @@ const Header = () => {
     if (!footer) return;
 
     const observer = new IntersectionObserver(
-      ([entry]) => {
-        setFooterVisible(entry.isIntersecting);
-      },
+      ([entry]) => setFooterVisible(entry.isIntersecting),
       { threshold: 0.1 }
     );
 
     observer.observe(footer);
-
     return () => observer.disconnect();
   }, []);
 
@@ -143,12 +150,20 @@ const Header = () => {
                   onClick={() => scrollToSection(id)}
                   className={linkClass(id)}
                 >
-                  {id.replace("-", " ").replace(/\b\w/g, l => l.toUpperCase())}
+                  {id.replace("-", " ").replace(/\b\w/g, (l) => l.toUpperCase())}
                   {activeSection === id && (
                     <span className="absolute -bottom-[2px] left-0 w-full h-[2px] bg-[#1C6EA4] rounded-full" />
                   )}
                 </li>
               ))}
+
+              {/* CAREERS */}
+              <li
+                onClick={goToCareers}
+                className="cursor-pointer text-[#154D71] transition-colors duration-300"
+              >
+                Careers
+              </li>
             </ul>
 
             <button className="bg-[linear-gradient(100.86deg,#1C6EA4_14.45%,#0B2A3E_88.24%)] text-white px-6 py-2 rounded-lg">
@@ -185,9 +200,14 @@ const Header = () => {
               className="cursor-pointer"
               onClick={() => scrollToSection(id)}
             >
-              {id.replace("-", " ").replace(/\b\w/g, l => l.toUpperCase())}
+              {id.replace("-", " ").replace(/\b\w/g, (l) => l.toUpperCase())}
             </li>
           ))}
+
+          {/* CAREERS */}
+          <li className="cursor-pointer" onClick={goToCareers}>
+            Careers
+          </li>
         </ul>
       </div>
 
