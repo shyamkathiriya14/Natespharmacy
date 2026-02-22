@@ -19,7 +19,7 @@ function App() {
     <>
       <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/careers" element={<Careers />} />
+      {/* <Route path="/careers" element={<Careers />} /> */}
     </Routes>
       {!hideSplash && <SplashScreen/>}
     </>
