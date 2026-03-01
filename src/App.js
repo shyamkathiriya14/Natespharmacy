@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import SplashScreen from "./components/sections/SplashScreen/SplashScreen";
-import Careers from "./pages/Careers/Careers";
+// import Careers from "./pages/Careers/Careers";
 
 function App() {
   const [hideSplash, setHideSplash] = useState(false);
@@ -19,7 +19,7 @@ function App() {
     <>
       <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/careers" element={<Careers />} />
+      {/* <Route path="/careers" element={<Careers />} /> */}
     </Routes>
       {!hideSplash && <SplashScreen/>}
     </>
