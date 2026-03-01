@@ -62,7 +62,7 @@ const Header = () => {
     onScroll();
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  }, [sections]);
 
   /* ---------------- SCROLL TO SECTION ---------------- */
   const scrollToSection = (id) => {
@@ -95,10 +95,10 @@ const Header = () => {
   };
 
   /* ---------------- CAREERS PAGE NAVIGATION ---------------- */
-  const goToCareers = () => {
-    setOpen(false);
-    navigate("/careers");
-  };
+  // const goToCareers = () => {
+  //   setOpen(false);
+  //   navigate("/careers");
+  // };
 
   const linkClass = (id) =>
     `relative cursor-pointer transition-colors duration-300 ${
@@ -189,7 +189,7 @@ const Header = () => {
         }`}
       >
         <div className="p-6 flex justify-between">
-          <img src={Company_Logo} className="w-[200px]" />
+          <img src={Company_Logo} alt="logo" className="w-[200px]" />
           <button onClick={() => setOpen(false)}>✕</button>
         </div>
 

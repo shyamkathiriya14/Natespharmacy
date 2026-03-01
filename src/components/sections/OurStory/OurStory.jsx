@@ -9,7 +9,7 @@ const OurStory = () => {
         <h1 className='text-[#154D71] text-center text-[32px] md:text-[38px] lg:text-[44px] xl:text-[48px] font-bold leading-[100%] mb-[36px] xl:mb-[55px]'>Our Story</h1>
         <div className='grid grid-cols-[1fr] lg:grid-cols-[auto_1fr] items-center gap-[24px] sm:gap-[36px] xl:gap-[50px]'>
           <div className='w-full lg:max-w-[550px] xl:max-w-[671px] h-full'>
-            <img loading="lazy" src={Madicine_Delivery} alt='madicine delivery image' className='w-full h-full object-cover rounded-[16px]' />
+            <img  src={Madicine_Delivery} alt='madicine delivery image' className='w-full h-full object-cover rounded-[16px]' />
           </div>
           <div>
             <div className='grid gap-[15px] lg:gap-[20px] mb-[28px] sm:mb-[35px] lg:mb-[60px]'>

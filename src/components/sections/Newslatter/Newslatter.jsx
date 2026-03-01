@@ -11,8 +11,8 @@ const Newslatter = () => {
         <p className='text-white text-[18px] lg:text-[18px] xl:text-[20px] text-center'>We’ll handle everything — it only takes a minute.</p>
        </div>
        <div className='flex items-center justify-center gap-[18px] sm:gap-[30px] md:gap-[40px] xl:gap-[60px] flex-col sm:flex-row'>
-        <button className='bg-white w-full justify-center max-w-[330px] sm:max-w-[287px] flex items-center gap-[10px] xl:gap-[14px] px-[36px] md:px-[45px] py-[18px] md:py-[22px] rounded-[18px] text-[18px] xl:text-[20px] font-bold text-[#154D71]'><img className='w-[24px] xl:w-[29px] h-auto' src={RefillNow_Icon}/>Refill Now</button>
-        <button className='border-[2px] w-full max-w-[100%] sm:max-w-[287px] border-white flex items-center justify-center gap-[10px] xl:gap-[14px] px-[36px] md:px-[45px] py-[18px] md:py-[22px] rounded-[18px] text-[18px] xl:text-[20px] font-bold text-white'>Transfer To Us <img className='w-[23px] xl:w-[27px] h-auto' src={RightArrow_Icon}/></button>
+        <button className='bg-white w-full justify-center max-w-[330px] sm:max-w-[287px] flex items-center gap-[10px] xl:gap-[14px] px-[36px] md:px-[45px] py-[18px] md:py-[22px] rounded-[18px] text-[18px] xl:text-[20px] font-bold text-[#154D71]'><img className='w-[24px] xl:w-[29px] h-auto' alt='icon' src={RefillNow_Icon}/>Refill Now</button>
+        <button className='border-[2px] w-full max-w-[100%] sm:max-w-[287px] border-white flex items-center justify-center gap-[10px] xl:gap-[14px] px-[36px] md:px-[45px] py-[18px] md:py-[22px] rounded-[18px] text-[18px] xl:text-[20px] font-bold text-white'>Transfer To Us <img className='w-[23px] xl:w-[27px] h-auto'  alt='arrow icon' src={RightArrow_Icon}/></button>
        </div>
     </section>
     </>

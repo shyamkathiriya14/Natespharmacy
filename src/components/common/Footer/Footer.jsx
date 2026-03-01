@@ -1,5 +1,3 @@
-import React from 'react';
-import Footer_logo from "../../../assets/images/Footer/Footer-Logo.svg";
 import location_icon from "../../../assets/images/Footer/location-icon.svg";
 import Clock_icon from "../../../assets/images/Footer/clock-icon.svg";
 import Call_icon from "../../../assets/images/Footer/call-icon.svg";

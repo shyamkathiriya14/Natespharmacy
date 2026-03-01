@@ -28,7 +28,7 @@ const SplashScreen = () => {
         0-.186-.005-.372-.014-.556 
         .84-.606 1.56-1.36 2.134-2.222z"/>
       </svg> */}
-      <img className='logo' src={Splash}/>
+      <img className='logo' alt='logo' src={Splash}/>
     </div>
    </>
   )
