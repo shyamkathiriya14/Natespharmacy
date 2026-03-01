@@ -158,12 +158,12 @@ const Header = () => {
               ))}
 
               {/* CAREERS */}
-              <li
+              {/* <li
                 onClick={goToCareers}
                 className="cursor-pointer text-[#154D71] transition-colors duration-300"
               >
                 Careers
-              </li>
+              </li> */}
             </ul>
 
             <button className="bg-[linear-gradient(100.86deg,#1C6EA4_14.45%,#0B2A3E_88.24%)] text-white px-6 py-2 rounded-lg">
@@ -205,9 +205,9 @@ const Header = () => {
           ))}
 
           {/* CAREERS */}
-          <li className="cursor-pointer" onClick={goToCareers}>
+          {/* <li className="cursor-pointer" onClick={goToCareers}>
             Careers
-          </li>
+          </li> */}
         </ul>
       </div>
 
